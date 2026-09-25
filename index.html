@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="JobClair est une application Android en cours de développement destinée à centraliser, filtrer et suivre les offres d'emploi issues de sources autorisées." />
+  <meta name="theme-color" content="#0F766E" />
+  <meta property="og:title" content="JobClair — Assistant de recherche d'emploi" />
+  <meta property="og:description" content="Une application Android pour centraliser, filtrer et suivre les offres d'emploi." />
+  <meta property="og:type" content="website" />
+  <title>JobClair — Assistant de recherche d'emploi</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./" aria-label="Accueil JobClair">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M15 14v-2.2A4.8 4.8 0 0 1 19.8 7h8.4A4.8 4.8 0 0 1 33 11.8V14" />
+            <rect x="7" y="14" width="34" height="25" rx="7" />
+            <path d="M7 24h34" />
+            <path d="m19.5 30 3 3 6-7" />
+          </svg>
+        </span>
+        <span>JobClair</span>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#france-travail">France Travail</a>
+        <a href="#confidentialite">Confidentialité</a>
+        <a class="button button-small" href="privacy.html">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Application Android en développement</p>
+          <h1>La recherche d'emploi, plus claire et mieux organisée.</h1>
+          <p class="lead">
+            JobClair centralise les offres issues de sources autorisées, applique les critères définis par l'utilisateur
+            et facilite le suivi des candidatures dans une interface unique.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#france-travail">Voir l'utilisation des données France Travail</a>
+            <a class="button button-secondary" href="#parcours">Voir le parcours utilisateur</a>
+          </div>
+
+          <div class="trust-row" aria-label="Caractéristiques principales">
+            <span>Android</span>
+            <span>Données locales</span>
+            <span>Recherche multicritère</span>
+            <span>Suivi des candidatures</span>
+          </div>
+        </div>
+
+        <div class="phone-wrap" aria-label="Maquette de l'application JobClair">
+          <div class="phone">
+            <div class="phone-top">
+              <span>JobClair</span>
+              <span class="status-dot" title="Interface de démonstration"></span>
+            </div>
+
+            <div class="app-card">
+              <p class="app-label">Votre recherche</p>
+              <div class="fake-input">Développeur Android</div>
+              <div class="fake-input">Cancon · 50 km</div>
+              <div class="chip-row">
+                <span class="chip active">CDI</span>
+                <span class="chip">CDD</span>
+                <span class="chip">Télétravail</span>
+              </div>
+              <div class="search-button">Rechercher</div>
+            </div>
+
+            <div class="result-card">
+              <div>
+                <p class="source">France Travail</p>
+                <strong>Développeur / Développeuse Android</strong>
+                <p class="meta">Lot-et-Garonne · CDI · 2 jours</p>
+              </div>
+              <span class="score">92%</span>
+            </div>
+
+            <div class="result-card">
+              <div>
+                <p class="source">Emploi Territorial</p>
+                <strong>Technicien systèmes et réseaux</strong>
+                <p class="meta">Nouvelle-Aquitaine · Temps complet</p>
+              </div>
+              <span class="score">84%</span>
+            </div>
+
+            <div class="bottom-nav">
+              <span>Accueil</span>
+              <span class="selected">Recherche</span>
+              <span>Offres</span>
+              <span>Suivi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fonctionnement" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Objectif</p>
+          <h2>Une interface unique pour chercher et organiser ses candidatures</h2>
+          <p>
+            L'utilisateur définit ses critères une seule fois. JobClair interroge les sources disponibles,
+            harmonise les résultats et permet ensuite de consulter, sauvegarder et suivre les offres retenues.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <span class="number">01</span>
+            <h3>Définir ses critères</h3>
+            <p>Métier, mots-clés, localisation, rayon, type de contrat, télétravail, salaire, expérience et ancienneté de l'offre.</p>
+          </article>
+          <article class="feature">
+            <span class="number">02</span>
+            <h3>Rechercher</h3>
+            <p>Les sources autorisées sont interrogées avec les critères compatibles, puis les résultats sont regroupés.</p>
+          </article>
+          <article class="feature">
+            <span class="number">03</span>
+            <h3>Comparer</h3>
+            <p>Les informations essentielles sont normalisées afin de rendre les offres plus lisibles et comparables.</p>
+          </article>
+          <article class="feature">
+            <span class="number">04</span>
+            <h3>Suivre</h3>
+            <p>Favoris, candidature envoyée, réponse attendue, entretien, accepté, refusé ou archivé.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="france-travail" class="section section-tinted">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">API Offres d'emploi</p>
+          <h2>Utilisation prévue des données France Travail</h2>
+          <p>
+            JobClair souhaite utiliser l'API officielle <strong>Offres d'emploi</strong> de France Travail afin
+            d'afficher, dans l'application Android, les annonces correspondant aux critères saisis par l'utilisateur.
+          </p>
+          <p>
+            L'accès à l'API est actuellement <strong>en cours de demande</strong>. La présente page décrit
+            l'intégration prévue avant mise en production.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Données utilisées</h3>
+          <ul class="check-list">
+            <li>Intitulé et description de l'offre</li>
+            <li>Employeur lorsqu'il est communiqué</li>
+            <li>Localisation et lieu de travail</li>
+            <li>Type de contrat et durée du travail</li>
+            <li>Salaire lorsqu'il est disponible</li>
+            <li>Expérience demandée</li>
+            <li>Date de publication</li>
+            <li>Informations et lien permettant de consulter ou candidater à l'offre</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container flow" id="parcours">
+        <h3>Parcours utilisateur prévu</h3>
+        <div class="flow-grid">
+          <div class="flow-step">
+            <span>1</span>
+            <strong>Saisie des critères</strong>
+            <p>L'utilisateur définit sa recherche dans JobClair.</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <span>2</span>
+            <strong>Interrogation sécurisée</strong>
+            <p>JobClair transmet uniquement les critères nécessaires au service backend sécurisé.</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <span>3</span>
+            <strong>API France Travail</strong>
+            <p>Le backend interroge l'API Offres d'emploi avec les identifiants techniques protégés.</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <span>4</span>
+            <strong>Affichage dans JobClair</strong>
+            <p>Les offres sont présentées avec leur source et les informations utiles à la candidature.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container notice">
+        <strong>À propos de France Travail Connect</strong>
+        <p>
+          JobClair n'utilise pas France Travail Connect dans sa version actuelle : aucune connexion au compte personnel
+          France Travail de l'utilisateur n'est nécessaire pour consulter les offres via l'API Offres d'emploi.
+        </p>
+      </div>
+    </section>
+
+    <section id="confidentialite" class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Confidentialité</p>
+          <h2>Les données personnelles restent sous le contrôle de l'utilisateur</h2>
+          <p>
+            Les critères de recherche, favoris, suivi des candidatures et éventuelles informations extraites d'un CV
+            ont vocation à être conservés localement sur l'appareil. Le CV n'est pas transmis à France Travail.
+          </p>
+          <a class="text-link" href="privacy.html">Lire la politique de confidentialité complète →</a>
+        </div>
+
+        <div class="privacy-grid">
+          <div class="mini-card">
+            <strong>CV local</strong>
+            <p>Le document et son analyse restent sur l'appareil.</p>
+          </div>
+          <div class="mini-card">
+            <strong>Pas de profil France Travail</strong>
+            <p>JobClair ne récupère pas les données personnelles du compte France Travail.</p>
+          </div>
+          <div class="mini-card">
+            <strong>Secret API côté serveur</strong>
+            <p>Les identifiants techniques de l'API ne sont pas intégrés dans l'APK Android.</p>
+          </div>
+          <div class="mini-card">
+            <strong>Sources identifiées</strong>
+            <p>Chaque offre conserve l'indication de sa source.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact-section">
+      <div class="container source-card">
+        <div>
+          <p class="eyebrow">Sources prévues</p>
+          <h2>France Travail et Emploi Territorial</h2>
+          <p>
+            JobClair est conçu pour utiliser des sources autorisées et documentées. D'autres connecteurs pourront être ajoutés
+            ultérieurement lorsque leurs modalités d'accès le permettent.
+          </p>
+        </div>
+        <div class="status-list">
+          <div><span class="badge pending">En cours</span> API Offres d'emploi France Travail</div>
+          <div><span class="badge ready">Intégrée</span> Emploi Territorial</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="./">
+          <span class="brand-mark small" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <path d="M15 14v-2.2A4.8 4.8 0 0 1 19.8 7h8.4A4.8 4.8 0 0 1 33 11.8V14" />
+              <rect x="7" y="14" width="34" height="25" rx="7" />
+              <path d="M7 24h34" />
+              <path d="m19.5 30 3 3 6-7" />
+            </svg>
+          </span>
+          <span>JobClair</span>
+        </a>
+        <p>Application Android indépendante en cours de développement.</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Politique de confidentialité</a>
+        <a href="https://github.com/OzyXel" rel="noopener noreferrer">Contact via GitHub</a>
+      </div>
+    </div>
+    <div class="container legal">
+      <p>
+        JobClair n'est pas affilié à France Travail. Les noms et marques cités appartiennent à leurs titulaires respectifs.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
